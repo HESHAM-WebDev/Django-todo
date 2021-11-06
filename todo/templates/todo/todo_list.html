@@ -1,0 +1,15 @@
+{% extends 'todo/base_layout.html' %}
+{% block title %}
+TODO LIST
+{%endblock%}
+{% block main-content %}
+
+<ul>
+{% for task in task_list %}
+<li>{{ task }}</li>
+{% empty %}
+<li>Sorry, no movies in this list.</li>
+{% endfor %}
+</ul>
+
+{%endblock%}
