@@ -7,7 +7,7 @@
     <title>{% block title %} TODO APP {%endblock%}</title>
 </head>
 <body>
-{% include 'todo/header.html' %}
+{% include 'main/header.html' %}
 <a href="{% url 'todo:todo-index' %}">TODO Index</a>
 <br />
 <a href="{% url 'todo:todo-list' %}">TODO LIST</a>
@@ -15,6 +15,6 @@
 {% block main-content %}
 
 {% endblock %}
-{% include 'todo/footer.html' %}
+{% include 'main/footer.html' %}
 </body>
 </html>
